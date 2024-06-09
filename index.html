@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoger Lager Spel</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- css map -->
+</head>
+<body>
+    <div class="container">
+        <h1>Hoger Lager Spel</h1>
+        <button id="startButton">Start het spel</button>
+        <p id="message"></p>
+        <main>
+            <a href="home.html">
+                <button class="HomeButton">   </button>
+              </a>
+              <a href="rules.html">
+                <button class="RulesButton"></button>
+              </a>
+        </main>
+        <div id="diceContainer">
+            <img id="dice1" src="img/dice1.png" alt="Dobbelsteen 1">
+            <img id="dice2" src="img/dice2.png" alt="Dobbelsteen 2">
+        </div>
+        <p>Totaal: <span id="currentTotal">0</span></p>
+        <button id="higherButton" disabled>Hoger</button>
+        <button id="lowerButton" disabled>Lager</button>
+        <div id="credits">
+            <p>Computer Credits: <span id="computerCreditCount">0</span></p>
+            <p>Speler 1 Credits: <span id="playerCreditCount">0</span></p>
+        </div>
+    </div>
+    <div id="notificationPopup" class="hidden">
+        <p id="notificationText">Dit is een melding.</p>
+        <button id="closePopupButton">Sluiten</button>
+    </div>
+    <script src="main.js"></script> <!-- javascript -->
+</body>
+</html>
